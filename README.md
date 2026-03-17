@@ -91,3 +91,5 @@ Yêu cầu: Xây dựng chương trình có phụ thuộc vào cả 2 thư việ
 ![26](https://github.com/user-attachments/assets/1f498612-d138-4062-a48c-9a2edcdabdca)
 
 - Biên dịch lại Buildroot, cài đặt và khởi chạy chương trình thành công trên BBB ngay sau khi cài đặt.
+  
+![27](https://github.com/user-attachments/assets/ca4ede17-9f19-4530-abfd-376be27ec7c4)
