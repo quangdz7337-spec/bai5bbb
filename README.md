@@ -62,3 +62,32 @@
 - So sánh về kích thước của 2 chương trình đã tạo ở bước (5) về dung lượng, yêu cầu phụ thuộc (sử dụng lệnh readelf dependencies).
   trên lý thuyết là thư viện tĩnh sẽ nặng hơn nhưng 2 file này  lại có kích thước như nhau bởi vì hàm rất rất nhỏ, 7.8K thực chất là bộ khung của hđh và thư viện stdio.h nên không tạo ra được sự khác biệt về mặt trực quan
   Dùng 2 lệnh trên sẽ thấy rõ sự khác biệt trong 2file
+  
+- Bài tập 03: Tích hợp ứng dụng và thư viện và Buildroot
+
+Yêu cầu: Xây dựng chương trình có phụ thuộc vào cả 2 thư viện ở Bài 1 và Bài 2 vào Buildroot có ràng buộc phụ thuộc.
+
+- Đưa thư viện ở bài 2 vào Buildroot và biên dịch tích hợp thành công
+.
+  Tạo file cấu hình giao diện
+  ![21](https://github.com/user-attachments/assets/12223170-4ac5-46db-b0f6-733ee310a8ec)
+  
+  Tạo file luật biên dịchmymath.mk
+  ![22](https://github.com/user-attachments/assets/d2cf3b46-8a57-449b-8b64-7b4733684c77)
+
+  Đăng ký gói mymath với Buildroot
+  ![23](https://github.com/user-attachments/assets/2392c98e-8721-4b36-af77-b026200cae6d)
+  ![24](https://github.com/user-attachments/assets/934e3482-ad23-4f0d-80d2-750e73d65474)
+
+
+- Viết 01 chương trình C/C++ có sử dụng cả 2 thư viện ở bài 01 và bài 02.
+
+- Biên dịch thành công chương trình và chạy thành công trên BBB
+  
+![25](https://github.com/user-attachments/assets/e7cb78ef-e209-4547-b1ff-8b324a3f5eda)
+
+- Viết cấu hình cho chương trình trên Buildroot, chú ý kèm điều kiện phụ thuộc vào 02 thư viện đã nêu. (Khi bật (enable) chương trình này, CJSON và thư viện tùy chỉnh tự động được kích hoạt).
+  
+![26](https://github.com/user-attachments/assets/1f498612-d138-4062-a48c-9a2edcdabdca)
+
+- Biên dịch lại Buildroot, cài đặt và khởi chạy chương trình thành công trên BBB ngay sau khi cài đặt.
