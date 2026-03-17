@@ -40,9 +40,20 @@
 
 
 - Viết chương trình C/C++ có sử dụng thư viện đã tạo
+  
+- ![16](https://github.com/user-attachments/assets/7025d1e9-bff5-4b3a-b47e-70f5e6144c08)
+
 
 - Biên dịch chương trình với 2 loại thư viện (Thư viện tĩnh và Thư viện động) thành 2 chương trình.
 
+- ![17](https://github.com/user-attachments/assets/3874ac00-d429-463f-8619-882e22f024fd)
+
+
 - Đưa chương trình và thư viện đã biên dịch xuống BBB (Cả 2 chương trình) thử nghiệm hoạt động.
 
+- ![18](https://github.com/user-attachments/assets/75fcac5f-f23a-444d-890d-ee67d63b0b05)
+
+
 - So sánh về kích thước của 2 chương trình đã tạo ở bước (5) về dung lượng, yêu cầu phụ thuộc (sử dụng lệnh readelf dependencies).
+  trên lý thuyết là thư viện tĩnh sẽ nặng hơn nhưng 2 file này  lại có kích thước như nhau bởi vì hàm rất rất nhỏ, 7.8K thực chất là bộ khung của hđh và thư viện stdio.h nên không tạo ra được sự khác biệt về mặt trực quan
+  Dùng 2 lệnh trên sẽ thấy rõ sự khác biệt trong 2file
