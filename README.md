@@ -36,6 +36,9 @@
 
 - Đưa thư viện đã biên dịch thành công ở bước 2 vào Sysroot.
 
+- ![15](https://github.com/user-attachments/assets/6c242ca5-6516-44b4-927f-569c800bdc31)
+
+
 - Viết chương trình C/C++ có sử dụng thư viện đã tạo
 
 - Biên dịch chương trình với 2 loại thư viện (Thư viện tĩnh và Thư viện động) thành 2 chương trình.
